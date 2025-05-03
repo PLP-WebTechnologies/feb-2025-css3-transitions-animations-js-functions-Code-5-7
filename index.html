@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Playground</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Animation Playground</h1>
+            <div class="controls">
+                <button id="spin-btn">Spin Animation</button>
+                <button id="bounce-btn">Bounce Animation</button>
+                <button id="color-btn">Color Pulse</button>
+                <select id="animation-speed">
+                    <option value="slow">Slow</option>
+                    <option value="normal" selected>Normal</option>
+                    <option value="fast">Fast</option>
+                </select>
+            </div>
+        </header>
+
+        <main>
+            <div class="animation-box" id="animation-target">
+                <p>Watch me animate!</p>
+            </div>
+
+            <div class="preferences">
+                <h2>Your Settings</h2>
+                <div class="pref-form">
+                    <label>
+                        Favorite Color:
+                        <input type="color" id="fav-color" value="#3498db">
+                    </label>
+                    <button id="save-settings">Save Settings</button>
+                </div>
+                <div id="status-message"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
